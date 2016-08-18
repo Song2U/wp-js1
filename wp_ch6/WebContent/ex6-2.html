@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+		/* Json 방식 */
+		var employee = {
+			name : "양송이",
+			title : "학생",
+			info : function(){
+				console.log(this.name + " : " + this.title);
+			}
+		};
+		
+		employee.info();
+		console.log(employee);
+	</script>
+</body>
+</html>

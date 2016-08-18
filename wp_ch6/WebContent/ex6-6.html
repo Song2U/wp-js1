@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script>
+	/* Array 내장 객체 생성 */
+	// 생성자
+	var a1 = new Array();
+	console.log(a1);
+
+	var a2 = new Array(10);
+	a2[20] = "hello"; // 지정한 크기보다 늘어나면 그만큼 늘어남... WOW
+	console.log(a2);
+
+	var f = function() {
+		console.log("hello!")
+	}
+
+	var a3 = new Array(1, "Hello", true, f, {
+		name : "양송이",
+		title : "학생"
+	});
+	console.log(a3);
+	a3[3]();
+	console.log(a3[4].name);
+
+	// 리터럴
+	var a4 = [];
+	console.log(a4);
+
+	var a5 = [ 1, "hello", true, function() {
+		console.log("world");
+	}, {
+		name : "양송이",
+		title : "학생"
+	} ];
+	console.log(a5);
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

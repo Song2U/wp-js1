@@ -37,10 +37,23 @@
 		title : "학생"
 	} ];
 	console.log(a5);
+
+	var init = function() {
+		console.log("....");
+		document.body.onmouseover = function() {
+			console.log("onmouseover");
+		}
+	}
 </script>
 
 </head>
-<body>
-
+<body onload="init();">
+	<h1>Hello Everyone!</h1>
+	<p>
+		hello<br>
+		baby<br>
+		loveU<br>
+		Yoo Hoo<br>
+	</p>
 </body>
 </html>
